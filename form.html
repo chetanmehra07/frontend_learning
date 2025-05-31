@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="html5 (1).png" type="image/x-icon" />
     <title>form</title>
   </head>
   <body>
     <h1>Hotel Feedback Form</h1>
-    <form method="post" action="https://httpbin.org/post">
+    <hr />
+    <form method="get" action="thankyou.html">
       <h2>personal information</h2>
-      <label for="first_Name">First Name</label>
+      <label for="first_Name">&nbsp;&nbsp;First Name</label>
       <input
         type="text"
         name="first_Name"
@@ -19,7 +21,7 @@
       />
       <br />
       <br />
-      <label for="Last_Name">Last Name</label>
+      <label for="Last_Name">&nbsp;&nbsp;Last Name</label>
       <input
         type="text"
         name="Last_Name"
@@ -29,7 +31,7 @@
       />
       <br />
       <br />
-      <label for="email">Email</label>
+      <label for="email">&nbsp;&nbsp;Email</label>
       <input
         type="email"
         name="email"
@@ -46,6 +48,7 @@
       <label for="outside">NO </label>
       <br />
       <br />
+      <hr />
       <h4>What did you like about our hotel?</h4>
       <select name="like" id="like">
         <option value="service">Service</option>
@@ -76,7 +79,10 @@
         placeholder="Enter your suggestions here"
       ></textarea>
       <br />
+      <br />
       <input type="submit" name="submit" id="submit" value="submit" />
+      <br />
+      <a href="/frontend_learning/basic.html">home</a>
     </form>
   </body>
 </html>
