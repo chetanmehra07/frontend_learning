@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <h1>Hotel Feedback Form</h1>
+    <form method="post" action="https://httpbin.org/post">
+      <h2>personal information</h2>
+      <label for="first_Name">First Name</label>
+      <input
+        type="text"
+        name="first_Name"
+        id="first_Name"
+        placeholder="Enter your first name"
+        required
+      />
+      <br />
+      <br />
+      <label for="Last_Name">Last Name</label>
+      <input
+        type="text"
+        name="Last_Name"
+        id="Last_Name"
+        placeholder="Enter your last name"
+        required
+      />
+      <br />
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br />
+      <h4>Are u from US?</h4>
+      <input type="radio" name="location" id="inside" value="inside" />
+      <label for="inside">YES</label>
+      <br />
+      <input type="radio" name="location" id="outside" value="outside" />
+      <label for="outside">NO </label>
+      <br />
+      <br />
+      <h4>What did you like about our hotel?</h4>
+      <select name="like" id="like">
+        <option value="service">Service</option>
+        <option value="cleanliness">Cleanliness</option>
+        <option value="food">Food</option>
+        <option value="location">Location</option>
+        <option value="staff">Staff</option>
+      </select>
+      <h4>Give ratings</h4>
+      <input type="radio" name="rating" id="one" value="1" />
+      <label for="one">1</label>
+      <input type="radio" name="rating" id="two" value="2" />
+      <label for="two">2</label>
+      <input type="radio" name="rating" id="three" value="3" />
+      <label for="three">3</label>
+      <input type="radio" name="rating" id="four" value="4" />
+      <label for="four">4</label>
+      <input type="radio" name="rating" id="five" value="5" />
+      <label for="five">5</label>
+      <br />
+      <br />
+      <h4>Any suggestions?</h4>
+      <textarea
+        name="suggestions"
+        id="suggestions"
+        rows="4"
+        cols="50"
+        placeholder="Enter your suggestions here"
+      ></textarea>
+      <br />
+      <input type="submit" name="submit" id="submit" value="submit" />
+    </form>
+  </body>
+</html>
